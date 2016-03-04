@@ -1,0 +1,25 @@
+{{#paper-toolbar}}
+
+    <div class="md-toolbar-tools">
+
+          {{#paper-button}}My Champion Pool{{/paper-button}}
+          {{#paper-button}}Help{{/paper-button}}
+
+    </div>
+
+    <div class="md-actions" layout="row" layout-align="end center">
+      {{#paper-button}}Log In{{/paper-button}}
+    </div>
+
+
+{{/paper-toolbar}}
+
+Champions:
+
+{{#each model as |champion|}}
+
+  {{champion.name}}
+
+{{/each}}
+
+{{outlet}}
