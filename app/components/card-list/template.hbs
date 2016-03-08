@@ -1,0 +1,12 @@
+<div class="col-md-2">
+  <div class="card-list-header">
+    {{header}}
+     <i class="glyphicon glyphicon-edit edit-icon"></i>
+  </div>
+
+  {{#each cards as |card|}}
+
+    {{card-widget content=card}}
+
+  {{/each}}
+</div>
