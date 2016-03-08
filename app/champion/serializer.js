@@ -10,8 +10,13 @@ export default DS.RESTSerializer.extend({
 
     let data = payload.data;
 
-    Object.keys(data).forEach(function(key){
+    Object.keys(data).forEach(function(key, index){
       let champ = data[key];
+
+      champ.image = champ.image.full;
+
+      //console.log(champ);
+
       champions.push(champ);
     });
 

@@ -1,25 +1,25 @@
-{{#paper-toolbar}}
+<div class="nav-header">
 
-    <div class="md-toolbar-tools">
+    <span class="pull-left">League Tasks</span>
 
-          {{#paper-button}}My Champion Pool{{/paper-button}}
-          {{#paper-button}}Help{{/paper-button}}
+    <div class="container">
+
+      <ul class="pull-left">
+        <li>Pool</li>
+        <li>Buy</li>
+        <li>Help</li>
+      </ul>
+
+      <ul class="pull-right">
+        <li>Log In</li>
+      </ul>
 
     </div>
 
-    <div class="md-actions" layout="row" layout-align="end center">
-      {{#paper-button}}Log In{{/paper-button}}
-    </div>
+</div>
 
+<div class="nav-padding">
 
-{{/paper-toolbar}}
-
-Champions:
-
-{{#each model as |champion|}}
-
-  {{champion.name}}
-
-{{/each}}
+</div>
 
 {{outlet}}
