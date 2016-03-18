@@ -14,4 +14,6 @@ export default DS.Model.extend({
   partype: DS.attr('string'),
   //stats: DS.attr('string')
 
+  userChampion: DS.belongsTo('user-champion', { async: false })
+
 });

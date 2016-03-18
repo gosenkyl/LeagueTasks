@@ -1,4 +1,4 @@
-import LeagueTasksAdapter from './leaguetasks';
+import LeagueTasksAdapter from '../leaguetasks/adapter';
 
 export default LeagueTasksAdapter.extend({
 
