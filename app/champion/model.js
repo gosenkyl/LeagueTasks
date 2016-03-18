@@ -1,7 +1,7 @@
 import DS from 'ember-data';
 
 export default DS.Model.extend({
-
+  //id: Name
   version: DS.attr('string'),
   key: DS.attr('string'),
   name: DS.attr('string'),
@@ -14,6 +14,6 @@ export default DS.Model.extend({
   partype: DS.attr('string'),
   //stats: DS.attr('string')
 
-  userChampion: DS.belongsTo('user-champion', { async: false })
+  userChampion: DS.belongsTo('user-champion')
 
 });

@@ -4,14 +4,22 @@ export default DS.RESTSerializer.extend({
 
   isNewSerializerAPI: true,
 
+  attrs:{
+
+    userChampion: {key: "userChampionId", serialize: false}
+
+  },
+
   normalizeResponse: function(store, primaryModelClass, payload, id, requestType){
 
     let champions = [];
 
     let data = payload.data;
 
-    Object.keys(data).forEach(function(key, index){
+    Object.keys(data).forEach(function(key){
       let champ = data[key];
+
+      champ.userChampionId = champ.id;
 
       champ.image = champ.image.full;
 
@@ -22,9 +30,9 @@ export default DS.RESTSerializer.extend({
       champions.push(champ);
     });
 
-    let deserialized = {"champions": champions};
+    payload = {"champions": champions};
 
-    return this._super(store, primaryModelClass, deserialized, id, requestType);
+    return this._super(store, primaryModelClass, payload, id, requestType);
   }
 
 

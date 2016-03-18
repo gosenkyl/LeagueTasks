@@ -4,9 +4,16 @@ export default DS.RESTSerializer.extend({
 
   isNewSerializerAPI: true,
 
+  attrs: {
+
+    champion: {key: "championId"}
+
+  },
+
+
   normalizeResponse: function(store, primaryModelClass, payload, id, requestType){
 
-debugger;
+    console.log('normalizeResponse');
 
     return this._super(store, primaryModelClass, payload, id, requestType);
   }

@@ -4,6 +4,6 @@ export default DS.Model.extend({
 
   role: DS.attr('string'),
 
-  champion: DS.belongsTo('champion')
+  champion: DS.belongsTo('champion'/*, {inverse: 'user-champion'}*/)
 
 });
