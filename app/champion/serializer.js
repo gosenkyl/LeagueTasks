@@ -15,6 +15,8 @@ export default DS.RESTSerializer.extend({
 
       champ.image = champ.image.full;
 
+      champ.difficulty = champ.info.difficulty;
+
       //console.log(champ);
 
       champions.push(champ);

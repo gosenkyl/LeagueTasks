@@ -1,7 +1,9 @@
-<div class="card">
+<div class="card" draggable={{isDragable}}>
 
-    <div class="card-delete"><i class="glyphicon glyphicon-remove pull-right"></i></div>
-    <div class="card-title">{{content.name}}</div>
+    <div class="card-title">{{content.name}}<i class="glyphicon glyphicon-remove pull-right"></i></div>
+    <div class="card-subtitle">{{content.title}}</div>
     <div class="card-img"><img src="http://ddragon.leagueoflegends.com/cdn/6.5.1/img/champion/{{content.image}}" /></div>
+
+    <div class="{{difficultColor}}">Difficulty: {{content.difficulty}}</div>
 
 </div>

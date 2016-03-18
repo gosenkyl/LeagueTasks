@@ -7,12 +7,11 @@ export default DS.Model.extend({
   name: DS.attr('string'),
   title: DS.attr('string'),
   blurb: DS.attr('string'),
-  //info: DS.attr('string'),
+  difficulty: DS.attr('string'),
   image: DS.attr('string'),
+
   //tags: DS.attr('string'),
   partype: DS.attr('string'),
   //stats: DS.attr('string')
-
-  image: DS.attr('string')
 
 });

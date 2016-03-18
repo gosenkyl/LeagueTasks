@@ -1,0 +1,23 @@
+<div class="row main-content">
+
+    <div class="col-md-6 selected">
+
+      {{card-drop content=mode onDropCard=(action 'onDropCard')}}
+
+    </div>
+
+    <div class="col-md-6 available">
+
+      <div class="card-list-header">
+        {{role}}
+      </div>
+
+      {{#each model.availableList as |card|}}
+
+        {{card-widget content=card}}
+
+      {{/each}}
+
+    </div>
+
+</div>

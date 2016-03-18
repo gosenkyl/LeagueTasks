@@ -70,6 +70,8 @@ $secondary-text-color: #ffffff;
   font-size: 2em;
   text-align: center;
   white-space: nowrap;
+
+  padding-bottom: 30px;
 }
 
 .edit-icon{
@@ -78,10 +80,12 @@ $secondary-text-color: #ffffff;
 
 .card{
   color: $secondary-text-color;
+  text-align: center;
 }
 
+
 .card-title{
-  text-align: center;
+
 }
 
 .card-img{
@@ -91,4 +95,16 @@ $secondary-text-color: #ffffff;
 .card-img img{
   display: block;
   margin: 0 auto;
+}
+
+.hard{
+  color: red;
+}
+
+.medium{
+  color: yellow;
+}
+
+.easy{
+  color: green;
 }
