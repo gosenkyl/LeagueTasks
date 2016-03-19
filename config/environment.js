@@ -22,7 +22,7 @@ module.exports = function(environment) {
       'default-src': "'none'",
       'script-src': "'self'",
       'font-src': "'self' fonts.gstatic.com",
-      'connect-src': "'self' http://ddragon.leagueoflegends.com",
+      'connect-src': "'self' http://ddragon.leagueoflegends.com http://localhost:8081",
       'img-src': "'self' data:",
       'style-src': "'self'",
       'media-src': "'self'",
