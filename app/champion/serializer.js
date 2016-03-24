@@ -6,7 +6,7 @@ export default DS.RESTSerializer.extend({
 
   attrs:{
 
-    userChampion: {key: "userChampionId", serialize: false}
+    userChampion: {key: "userChampionId"}
 
   },
 

@@ -13,7 +13,9 @@ export default DS.RESTSerializer.extend({
 
   normalizeResponse: function(store, primaryModelClass, payload, id, requestType){
 
-    console.log('normalizeResponse');
+    payload.role = payload.role.id;
+
+    payload = {"user-champion": payload};
 
     return this._super(store, primaryModelClass, payload, id, requestType);
   }
