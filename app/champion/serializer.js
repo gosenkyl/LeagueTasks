@@ -4,11 +4,11 @@ export default DS.RESTSerializer.extend({
 
   isNewSerializerAPI: true,
 
-  attrs:{
-
+  /*attrs:{
     userChampion: {key: "userChampionId"}
+  }*/
 
-  },
+  /*,
 
   normalizeResponse: function(store, primaryModelClass, payload, id, requestType){
 
@@ -33,7 +33,7 @@ export default DS.RESTSerializer.extend({
     payload = {"champions": champions};
 
     return this._super(store, primaryModelClass, payload, id, requestType);
-  }
+  }*/
 
 
 });

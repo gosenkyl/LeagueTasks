@@ -5,10 +5,12 @@
   </div>
 {{/link-to}}
 
+
 {{#each cards as |card|}}
-
-  <div style="color: white;">Testing: {{card.userChampion.role}}</div>
-
-  {{card-widget content=card isDragable=false}}
+  test
+  {{#each card.champions as |champion|}}
+      <span style="text-color: white;">test</span>
+      {{card-widget content=champion isDragable=false}}
+  {{/each}}
 
 {{/each}}

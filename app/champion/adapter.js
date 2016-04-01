@@ -1,9 +1,6 @@
-import riotgames from '../riotgames/adapter';
+import LeagueTasks from '../leaguetasks/adapter';
 
-export default riotgames.extend({
+export default LeagueTasks.extend({
 
-  pathForType: function(){
-    return "champion.json";
-  }
 
 });
